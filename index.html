@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn and have fun with interactive quizzes on various topics. Test your knowledge and discover new facts!">
+    <title>QuizZone - Learn & Have Fun</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">QuizZone</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Test Your Knowledge, Learn Something New</h1>
+            <p>Challenge yourself with fun interactive quizzes on science, history, geography, and more!</p>
+            <a href="#categories" class="cta-button">Start Quizzing</a>
+        </section>
+
+        <section id="categories" class="categories">
+            <h2>Choose a Category</h2>
+            <div class="category-grid">
+                <div class="category-card" onclick="startQuiz('science')">
+                    <div class="icon">🔬</div>
+                    <h3>Science</h3>
+                    <p>Explore the wonders of physics, chemistry, and biology</p>
+                </div>
+                <div class="category-card" onclick="startQuiz('history')">
+                    <div class="icon">📜</div>
+                    <h3>History</h3>
+                    <p>Journey through time and discover historical events</p>
+                </div>
+                <div class="category-card" onclick="startQuiz('geography')">
+                    <div class="icon">🌍</div>
+                    <h3>Geography</h3>
+                    <p>Test your knowledge of countries, capitals, and landmarks</p>
+                </div>
+                <div class="category-card" onclick="startQuiz('general')">
+                    <div class="icon">🧠</div>
+                    <h3>General Knowledge</h3>
+                    <p>Mixed questions across various topics</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <h2>About QuizZone</h2>
+            <p>QuizZone is your destination for fun and learning. Our interactive quizzes are designed to be both entertaining and educational. Whether you're looking to test your existing knowledge or learn something new, you'll find engaging content here.</p>
+            <p>Each quiz features carefully crafted questions with explanations, helping you understand the "why" behind every answer. Track your progress, challenge yourself, and become a quiz master!</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 QuizZone. Learn, Play, Grow.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
